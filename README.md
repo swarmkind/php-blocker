@@ -6,7 +6,7 @@ A small Chrome/Brave extension by **Swarmkind** that blocks unapproved web hosts
 
 [Download the latest ZIP](https://github.com/swarmkind/php-blocker/releases/latest) · [Installation instructions](INSTALL.md) · [Data sources](DATA-SOURCES.md) · [Privacy](PRIVACY.md) · [@swarmkind on X](https://x.com/swarmkind)
 
-[Watch the 25-second demonstration](https://github.com/swarmkind/php-blocker/releases/download/v0.3.0/php-blocker-demo.mp4) — square video showing blocking, explicit approval and the control panel.
+[Watch the 34-second product demo](https://github.com/swarmkind/php-blocker/releases/download/v0.3.0/php-blocker-demo.mp4) — square video with music, showing a real PHP.net visit being blocked, approved, loaded and blocked again through settings. [Video credits](VIDEO-CREDITS.md).
 
 ## Install without the Chrome Web Store
 
