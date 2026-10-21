@@ -1,0 +1,8 @@
+node_modules
+research/
+artifacts/
+.DS_Store
+
+__pycache__/
+*.pyc
+extension/_metadata/
