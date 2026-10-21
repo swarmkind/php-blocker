@@ -13,3 +13,7 @@
 Checks covered pre-network blocking, explicit approval, unapproved third-party images/fetch/WebSockets, subdomain/lookalike isolation, blocked POST without replay, invalid-import preservation, a large list import, bundled PHP evidence, malicious warning-page input, stopped background workers, restart persistence, approval removal and a missing-redirect fallback.
 
 No live website was vulnerability-scanned. We have not tested Windows, Linux, mobile browsers, incognito, managed devices or Chromium 128. The release is not Chrome Web Store reviewed. See INSTALL.md for browser limitations and recovery.
+
+## v0.2.1 link update
+
+Verified the control-panel X link target, new-tab navigation, normal approval requirement, and desktop/narrow layouts in Chrome for Testing. Inspected the desktop screenshot. The full blocking suite was not rerun for this HTML/CSS link update.

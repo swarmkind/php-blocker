@@ -7,7 +7,7 @@ This is a desktop unpacked extension. No Chrome Web Store account or approval is
 ## Install the release ZIP
 
 1. Prefer a new, separate Chrome or Brave profile. Save your work and close existing website tabs before enabling the extension. Previously loaded pages and existing connections are not undone.
-2. Download `php-precaution-0.2.0.zip` from [GitHub Releases](https://github.com/swarmkind/php-precaution/releases/latest).
+2. Download `php-precaution-0.2.1.zip` from [GitHub Releases](https://github.com/swarmkind/php-precaution/releases/latest).
 3. Extract the ZIP into a permanent folder. Do not leave it inside the ZIP, and do not delete or move the extracted folder while using the extension.
 4. Open **`chrome://extensions`** in Chrome or **`brave://extensions`** in Brave.
 5. Switch on **Developer mode**.

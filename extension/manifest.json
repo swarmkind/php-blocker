@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PHP Precaution — Swarmkind",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Strict browsing: blocks unapproved hosts and shows known PHP indicators. Approval is not a security check.",
   "minimum_chrome_version": "128",
   "permissions": ["declarativeNetRequest", "storage", "unlimitedStorage"],

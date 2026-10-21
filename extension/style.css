@@ -5,6 +5,9 @@
 .settings main{max-width:480px}
 .settings header{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .settings .brand{margin:0;font-size:11px}
+.settings a.brand{text-decoration:none;letter-spacing:.04em}
+.settings a.brand:hover{text-decoration:underline}
+.settings a.brand:focus-visible{outline:3px solid #f2cf84;outline-offset:4px}
 .settings .badge{font-size:11px;letter-spacing:0;padding:3px 8px}
 .settings h1{font-size:26px;margin:18px 0 6px}
 .settings .intro{margin:0;color:#aebeb1}

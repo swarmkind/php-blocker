@@ -4,7 +4,7 @@ A small Chrome/Brave extension by **Swarmkind** that blocks unapproved web hosts
 
 **Strict by default. Expect disrupted browsing. This is not a fix for a PHP vulnerability and does not certify any site as safe.** Approvals permit that host’s requests, including PHP. PHP evidence lists are incomplete historical observations.
 
-[Download the latest ZIP](https://github.com/swarmkind/php-precaution/releases/latest) · [Installation instructions](INSTALL.md) · [Data sources](DATA-SOURCES.md) · [Privacy](PRIVACY.md)
+[Download the latest ZIP](https://github.com/swarmkind/php-precaution/releases/latest) · [Installation instructions](INSTALL.md) · [Data sources](DATA-SOURCES.md) · [Privacy](PRIVACY.md) · [@swarmkind on X](https://x.com/swarmkind)
 
 ## Install without the Chrome Web Store
 
