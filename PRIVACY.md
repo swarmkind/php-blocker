@@ -1,6 +1,6 @@
 # Privacy
 
-PHP Precaution has no server, accounts, analytics, telemetry or remote reputation queries. It does not automatically download datasets.
+PHP Blocker has no server, accounts, analytics, telemetry or remote reputation queries. It does not automatically download datasets.
 
 Approved hostnames are stored in Chrome’s local declarative request rules. An imported PHP list, its filename and row count are saved in extension-local storage. These are not synced by this extension. Uninstalling it removes this state.
 

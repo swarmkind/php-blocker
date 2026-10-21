@@ -17,3 +17,7 @@ No live website was vulnerability-scanned. We have not tested Windows, Linux, mo
 ## v0.2.1 link update
 
 Verified the control-panel X link target, new-tab navigation, normal approval requirement, and desktop/narrow layouts in Chrome for Testing. Inspected the desktop screenshot. The full blocking suite was not rerun for this HTML/CSS link update.
+
+## v0.3.0 naming update
+
+All current app labels, documentation, package names and repository links now use PHP Blocker. Five Node tests and the CSV-filter test passed; all 12 Brave browser checks passed. A fresh Chrome for Testing capture also verified blocked-before-request behaviour and explicit approval.

@@ -1,4 +1,4 @@
-# Install PHP Precaution in Chrome or Brave
+# Install PHP Blocker in Chrome or Brave
 
 This is a desktop unpacked extension. No Chrome Web Store account or approval is required. Use Chrome/Brave based on Chromium 128 or later. It is not an Android or iOS installation package.
 
@@ -7,12 +7,12 @@ This is a desktop unpacked extension. No Chrome Web Store account or approval is
 ## Install the release ZIP
 
 1. Prefer a new, separate Chrome or Brave profile. Save your work and close existing website tabs before enabling the extension. Previously loaded pages and existing connections are not undone.
-2. Download `php-precaution-0.2.1.zip` from [GitHub Releases](https://github.com/swarmkind/php-precaution/releases/latest).
+2. Download `php-blocker-0.3.0.zip` from [GitHub Releases](https://github.com/swarmkind/php-blocker/releases/latest).
 3. Extract the ZIP into a permanent folder. Do not leave it inside the ZIP, and do not delete or move the extracted folder while using the extension.
 4. Open **`chrome://extensions`** in Chrome or **`brave://extensions`** in Brave.
 5. Switch on **Developer mode**.
-6. Click **Load unpacked**. Select the extracted `php-precaution` folder containing `manifest.json`.
-7. The settings page opens. Pin **PHP Precaution — Swarmkind** from the browser’s Extensions menu for easy access.
+6. Click **Load unpacked**. Select the extracted `php-blocker` folder containing `manifest.json`.
+7. The settings page opens. Pin **PHP Blocker — Swarmkind** from the browser’s Extensions menu for easy access.
 8. Test it: open `https://example.com/`. A warning should appear before that page is requested. If it does not, stop and check that the extension is enabled and has site access on all sites.
 
 If using GitHub’s **Code → Download ZIP** instead, extract it and select the repository’s **`extension`** subfolder in step 6. No build, Node.js or command line is needed to install either version.

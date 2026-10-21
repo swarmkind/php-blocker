@@ -16,7 +16,7 @@ const server = createServer((req, res) => {
 server.on('upgrade', (req, socket) => { requests.push(`${req.headers.host}${req.url}`); socket.destroy(); });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const port = server.address().port;
-const profile = await mkdtemp(join(tmpdir(), 'php-precaution-test-'));
+const profile = await mkdtemp(join(tmpdir(), 'php-blocker-test-'));
 const extension = resolve('extension');
 await mkdir('artifacts', {recursive: true});
 let context;

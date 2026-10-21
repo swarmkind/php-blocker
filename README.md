@@ -1,10 +1,10 @@
-# PHP Precaution
+# PHP Blocker
 
 A small Chrome/Brave extension by **Swarmkind** that blocks unapproved web hosts before their network requests proceed. A local warning shows PHP evidence where available; you must explicitly approve a host to visit it.
 
 **Strict by default. Expect disrupted browsing. This is not a fix for a PHP vulnerability and does not certify any site as safe.** Approvals permit that host’s requests, including PHP. PHP evidence lists are incomplete historical observations.
 
-[Download the latest ZIP](https://github.com/swarmkind/php-precaution/releases/latest) · [Installation instructions](INSTALL.md) · [Data sources](DATA-SOURCES.md) · [Privacy](PRIVACY.md) · [@swarmkind on X](https://x.com/swarmkind)
+[Download the latest ZIP](https://github.com/swarmkind/php-blocker/releases/latest) · [Installation instructions](INSTALL.md) · [Data sources](DATA-SOURCES.md) · [Privacy](PRIVACY.md) · [@swarmkind on X](https://x.com/swarmkind)
 
 ## Install without the Chrome Web Store
 
