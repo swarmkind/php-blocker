@@ -20,8 +20,8 @@ If downloading the source ZIP, select its `extension` subfolder instead. No buil
 - Blocks unapproved HTTP(S) and WebSocket network requests, including page navigation and embedded resources.
 - Shows a local warning before an unapproved GET navigation reaches the destination.
 - Allows only exact hostnames you explicitly approve. Subdomains and third-party resources need separate approval. All ports and supported schemes for that hostname are included.
-- Displays `.php`-style paths and matches from a **951-host openly licensed PHP sample**. PHP list membership is a caution, not an allegation of a vulnerable or malicious site.
-- Imports a larger hostname list locally. We verified a free sample yielding **271,485 PHP-labelled hostnames**, but have not redistributed it because its public page does not state redistribution rights. [Source, exact counts and local filtering instructions](DATA-SOURCES.md).
+- Displays `.php`-style paths and matches from **271,815 bundled PHP-labelled hosts**. PHP list membership is a caution, not an allegation of a vulnerable or malicious site.
+- Bundles all **271,485** PHP-labelled hosts from the Edu-Data sample, plus the existing Crawlora sample (271,815 unique hosts after merging). No import is needed. Optional custom lists remain local. [Sources, dates and licence status](DATA-SOURCES.md).
 - Stores data only in your browser profile. No accounts, telemetry or remote list lookups.
 
 The PHP list explains blocked hosts; strict mode already blocks every unapproved host. A manually approved host is allowed even if it appears in a PHP list. There is no automatic PHP-free or safe classification.
@@ -53,4 +53,4 @@ The packaged ZIP is built from an explicit extension directory and documentation
 
 ## Licence
 
-Code: [MIT](LICENSE). Bundled Crawlora data: [CC BY 4.0](CC-BY-4.0.txt), with attribution in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+Code: [MIT](LICENSE). Crawlora data: [CC BY 4.0](CC-BY-4.0.txt). The Edu-Data sample states no explicit redistribution licence; its inclusion is not a claim of permission or an open-data licence. Code and Crawlora licences do not cover that source. See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).

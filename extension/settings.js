@@ -17,10 +17,12 @@ async function refresh() {
     });
     li.append(label, remove); $('approved').append(li);
   }
-  if (!rules.length) $('approved').textContent = 'No hosts approved. Strict blocking is active.';
+  if (!rules.length) $('approved').textContent = 'No approved hosts.';
+  $('reset').hidden = !rules.length;
   const bundled = await (await fetch('data/php-hosts.json')).json();
   const local = await chrome.storage.local.get(['importedCount', 'importedName']);
-  $('dataset').textContent = `${bundled.hosts.length.toLocaleString()} bundled hostnames from Crawlora’s August 2026 sample (CC BY 4.0). ${local.importedCount ? `${local.importedCount.toLocaleString()} locally imported hostnames from ${local.importedName}.` : 'No imported list.'}`;
+  $('dataset').textContent = `${bundled.hosts.length.toLocaleString()} bundled hosts${local.importedCount ? ` · ${local.importedCount.toLocaleString()} imported` : ' · Ready to use'}`;
+  $('clear').hidden = !local.importedCount;
 }
 $('add').addEventListener('submit', async event => {
   event.preventDefault();

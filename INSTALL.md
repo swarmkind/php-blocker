@@ -7,7 +7,7 @@ This is a desktop unpacked extension. No Chrome Web Store account or approval is
 ## Install the release ZIP
 
 1. Prefer a new, separate Chrome or Brave profile. Save your work and close existing website tabs before enabling the extension. Previously loaded pages and existing connections are not undone.
-2. Download `php-precaution-0.1.0.zip` from [GitHub Releases](https://github.com/swarmkind/php-precaution/releases/latest).
+2. Download `php-precaution-0.2.0.zip` from [GitHub Releases](https://github.com/swarmkind/php-precaution/releases/latest).
 3. Extract the ZIP into a permanent folder. Do not leave it inside the ZIP, and do not delete or move the extracted folder while using the extension.
 4. Open **`chrome://extensions`** in Chrome or **`brave://extensions`** in Brave.
 5. Switch on **Developer mode**.
@@ -30,7 +30,7 @@ If using GitHub’s **Code → Download ZIP** instead, extract it and select the
 
 ## Import your own PHP evidence list
 
-Open the extension settings and select a UTF-8 `.txt` file containing one hostname per line:
+Open the extension settings, expand **Custom list**, and select a UTF-8 `.txt` file containing one hostname per line:
 
 ```text
 example.com
@@ -39,7 +39,7 @@ www.example.org
 
 Blank lines and `#` comments are accepted. URLs, wildcards, ports and CSV columns are rejected. Duplicate names are removed. The limit is 64 MB. An invalid file leaves the previous import intact; a valid import replaces it. Importing never grants access to a site.
 
-See [DATA-SOURCES.md](DATA-SOURCES.md) for the large, freely downloadable technology sample and its local filtering instructions. The public extension bundles only the separately licensed 951-host Crawlora sample.
+See [DATA-SOURCES.md](DATA-SOURCES.md) for the large, freely downloadable technology sample and its local filtering instructions. The extension already bundles all 271,485 hosts from that sample, merged with Crawlora for 271,815 unique hosts. No import is required. Source licence status is documented in DATA-SOURCES.md.
 
 ## Update, disable or remove
 

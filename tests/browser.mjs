@@ -87,6 +87,31 @@ try {
     assert.equal(hit('/submit').length, 0);
     assert.ok(!page.url().includes('blocked.html'));
   });
+  await check('full bundled PHP evidence works on a fresh install without importing', async () => {
+    assert.equal(await worker.evaluate(async () => (await chrome.storage.local.get('importedCount')).importedCount), undefined);
+    for (const host of ['0038.co.jp', 'jquery.com']) {
+      await page.goto(`https://${host}/`);
+      await page.locator('#reason').filter({hasText: 'bundled PHP data'}).waitFor();
+    }
+    await settings.locator('#dataset').filter({hasText: '271,815 bundled hosts'}).waitFor();
+  });
+  await check('compact controls fit desktop and mobile; approval controls still work', async () => {
+    assert.equal(await settings.locator('#list-options').getAttribute('open'), null);
+    await settings.setViewportSize({width: 800, height: 650});
+    assert.ok(await settings.evaluate(() => document.documentElement.scrollHeight <= innerHeight));
+    await settings.screenshot({path: 'artifacts/settings-compact.png', fullPage: true});
+    await settings.setViewportSize({width: 360, height: 740});
+    assert.ok(await settings.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await settings.locator('#host').fill('control.test');
+    await settings.locator('#accept').check();
+    await settings.getByRole('button', {name: 'Approve', exact: true}).click();
+    await settings.locator('#status').filter({hasText: 'control.test approved'}).waitFor();
+    await settings.getByRole('button', {name: 'Remove approval for control.test', exact: true}).click();
+    await settings.locator('#status').filter({hasText: 'control.test is no longer approved'}).waitFor();
+    await settings.screenshot({path: 'artifacts/settings-mobile.png', fullPage: true});
+    await settings.setViewportSize({width: 1100, height: 900});
+    await settings.locator('#list-options summary').click();
+  });
   await check('local list import changes evidence, not approvals; invalid import preserves data', async () => {
     const before = await worker.evaluate(() => chrome.declarativeNetRequest.getDynamicRules());
     await settings.locator('#file').setInputFiles({name: 'php-list.txt', mimeType: 'text/plain', buffer: Buffer.from('listed.test\nlisted.test\n')});
@@ -108,10 +133,6 @@ try {
     const count = await worker.evaluate(async () => (await chrome.storage.local.get('importedCount')).importedCount);
     assert.ok(count >= 250000, `Unexpected list count ${count}`);
     console.log('Imported hostnames:', count);
-  });
-  await check('bundled PHP evidence is shown without contacting the listed site', async () => {
-    await page.goto('https://jquery.com/');
-    await page.locator('#reason').filter({hasText: 'Crawlora'}).waitFor();
   });
   await check('invalid warning-page destination cannot approve or execute code', async () => {
     await page.goto(`chrome-extension://${id}/blocked.html#javascript:alert(1)`);

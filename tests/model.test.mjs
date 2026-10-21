@@ -39,7 +39,10 @@ test('deny rule is packaged and navigation redirects never replay POST', async (
 
 test('bundled PHP evidence is deduplicated and attributed', async () => {
   const data = JSON.parse(await readFile('extension/data/php-hosts.json'));
-  assert.equal(data.hosts.length, 951);
-  assert.equal(data.license, 'CC BY 4.0');
+  assert.equal(data.hosts.length, 271815);
+  assert.equal(data.sources[0].count, 271485);
+  assert.ok(data.hosts.includes('0038.co.jp'));
+  assert.ok(data.hosts.includes('jquery.com'));
+  assert.equal(data.sources[1].license, 'CC BY 4.0');
   assert.deepEqual(data.hosts, parseList(data.hosts.join('\n')));
 });

@@ -1,1 +1,31 @@
 :root{color-scheme:dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0c1210;color:#e7eee8;line-height:1.6}*{box-sizing:border-box}body{margin:0;padding:48px 24px}main{max-width:720px;margin:auto}.brand{font-size:12px;letter-spacing:.16em;color:#aebeb1;font-weight:650}.badge{display:inline-block;padding:5px 11px;border:1px solid #55715a;color:#c3e6c8;border-radius:6px;font-size:12px;letter-spacing:.1em}h1{font-size:clamp(28px,5vw,42px);line-height:1.15;letter-spacing:-.035em;margin:20px 0}h2{font-size:23px}p{color:#c5d0c7}.host{font-size:23px;color:#d1f3b0;overflow-wrap:anywhere}.fine{font-size:13px;color:#a6b5aa}.notice{padding:16px;border-left:3px solid #cbbb81;background:#1b211a}.check{display:flex;gap:12px;align-items:flex-start;margin:20px 0}input[type=checkbox]{margin-top:6px;width:18px;height:18px;flex-shrink:0;accent-color:#b9e58e}button{background:#c6eba5;color:#17220f;border:1px solid transparent;padding:12px 16px;border-radius:7px;font:inherit;font-size:14px;font-weight:650;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.secondary{background:transparent;color:#d1ddd3;border-color:#506154}.link{background:transparent;color:#c6eba5;padding:0;text-decoration:underline}.actions{display:flex;gap:12px;flex-wrap:wrap}button:focus-visible,input:focus-visible{outline:3px solid #f2cf84;outline-offset:4px}section{border-top:1px solid #344438;margin-top:32px;padding-top:16px}input[type=text]{display:block;width:100%;padding:12px;margin:8px 0;background:#162019;border:1px solid #627569;color:#fff;border-radius:6px;font:inherit}input[type=file]{display:block;margin:12px 0;max-width:100%}li{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:10px 0;overflow-wrap:anywhere}ul{padding:0}li button{padding:7px 12px;flex-shrink:0}[role=status]{color:#f2cf84;min-height:1.5em}[hidden]{display:none!important}@media(max-width:480px){body{padding:24px 18px}.actions button{width:100%}}
+
+/* Compact controls; optional explanations stay available in disclosure panels. */
+.settings{padding:28px 16px;font-size:14px;line-height:1.45}
+.settings main{max-width:480px}
+.settings header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.settings .brand{margin:0;font-size:11px}
+.settings .badge{font-size:11px;letter-spacing:0;padding:3px 8px}
+.settings h1{font-size:26px;margin:18px 0 6px}
+.settings .intro{margin:0;color:#aebeb1}
+.settings h2{font-size:15px;margin:0 0 10px}
+.settings section{margin-top:20px;padding-top:16px}
+.settings .input-row{display:flex;align-items:center;gap:8px;margin:5px 0}
+.settings input[type=text]{min-width:0;margin:0;padding:8px 10px}
+.settings button{padding:8px 12px;white-space:nowrap}
+.settings .link{padding:0;font-size:12px}
+.settings .check{font-size:12px;gap:8px;margin:8px 0 0;align-items:center}
+.settings input[type=checkbox]{width:16px;height:16px;margin:0}
+.settings [role=status]{min-height:0;font-size:12px;margin:8px 0}
+.settings [role=status]:empty{display:none}
+.settings ul{font-size:13px;margin:14px 0 8px;max-height:200px;overflow-y:auto}
+.settings li{margin:6px 0}
+.settings li span{min-width:0;overflow-wrap:anywhere}
+.settings li button{font-size:12px;padding:5px 9px}
+.settings #dataset{margin:0 0 10px}
+.settings details{font-size:12px;color:#aebeb1}
+.settings summary{cursor:pointer;color:#d1ddd3;padding:5px 0;width:fit-content}
+.settings summary:focus-visible{outline:3px solid #f2cf84;outline-offset:3px}
+.settings details label{display:block;margin-top:8px}
+.settings .help{border-top:1px solid #344438;margin-top:16px;padding-top:10px}
+@media(max-width:480px){.settings{padding:20px 16px}}
